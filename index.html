@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="so">
 <head>
-    
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website-ka Muxsin</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d1117; 
-            color: #c9d1d9; 
+            background-color: #0d1117;
+            color: #c9d1d9;
             text-align: center;
             padding: 50px 20px;
             margin: 0;
         }
         h1 {
-            color: #58a6ff; 
+            color: #58a6ff;
             font-size: 36px;
             margin-bottom: 10px;
-        }
-        p {
-            font-size: 18px;
-            color: #8b949e;
-            max-width: 600px;
-            margin: 0 auto 20px auto;
-            line-height: 1.6;
         }
         .card {
             background-color: #161b22;
             border: 1px solid #30363d;
             border-radius: 12px;
             padding: 30px;
-            display: inline-block;
-            box-shadow: 0px 8px 24px rgba(0,0,0,0.3);
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
         .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
+            width: 150px;
+            height: 150px;
+            border-radius: 50px;
             border: 3px solid #58a6ff;
+            object-fit: cover;
             margin-bottom: 20px;
+        }
+        .story-section {
+            margin-top: 25px;
+            text-align: left;
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
+        }
+        .story-title {
+            color: #58a6ff;
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .story-text {
+            font-size: 16px;
+            color: #8b949e;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -50,8 +59,22 @@
 
     <div class="card">
         <img src="IMG-20260528-WA0121.jpg" alt="Muxsin" class="profile-img">
+        
         <h1>Ku Soo Dhawaada Bogga Muxsin!</h1>
-        <p>Kani waa website-kaygii ugu horreeyay ee aan ku guulaysto inaan gacantayda ku dhiso, kuna soo bandhigo sawirkayga rasmiga ah.</p>
+        
+        <div class="story-section">
+            <div class="story-title">📖 Igu Saabsan (Somali):</div>
+            <p class="story-text">
+                Ku soo dhowaada bogga Muxsin! Waxaan ahay dhiirigeliye iyo farsamo-yaqaan jecel hal-abuurka iyo dhisidda mashaariicda casriga ah. Website-kan waa kii iigu horreeyay ee aan gacantayda ku dhiso, waana bilowga safarkeyga weyn ee dhanka tignoolajiyada.
+            </p>
+        </div>
+
+        <div class="story-section">
+            <div class="story-title">📖 About Me (English):</div>
+            <p class="story-text">
+                Welcome to Mohsin's page! I am a motivator and a tech enthusiast who loves creativity and building modern projects. This website is the very first one I built with my own hands, and it marks the beginning of my great journey in technology.
+            </p>
+        </div>
     </div>
 
 </body>
