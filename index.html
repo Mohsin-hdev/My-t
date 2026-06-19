@@ -1,156 +1,61 @@
-<!DOCTYPE html>
-<html lang="so">
-<head>
-    
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamar Shood Fast Food</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f1f5f9; /* Background-ka guud oo khafiif ah */
-            color: #1e293b;
-            text-align: center;
-            padding: 15px 10px;
-            margin: 0;
-            min-height: 100vh;
-        }
-        .bismillah {
-            font-size: 22px;
-            color: #0f2027;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
+<main style="font-family:sans-serif; background:#f1f5f9; display:flex; flex-direction:column; align-items:center; margin:0; padding:0;">
+    <div style="width:100%; max-width:480px; background:#ffffff; min-height:100vh; box-shadow:0 0 20px rgba(0,0,0,0.1); padding-bottom:40px;">
         
-        /* KAARKA WEYN EE WEBSITE-KA (Hadda waa Caddaan) */
-        .card {
-            background-color: #ffffff; /* Boqolkiiba boqol caddaan */
-            border: 2px solid #0f2027;
-            border-radius: 15px;
-            padding: 25px 20px;
-            max-width: 480px;
-            margin: 0 auto;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        .main-title {
-            color: #0f2027;
-            font-size: 32px;
-            margin: 0 0 15px 0;
-            font-weight: bold;
-        }
-
-        .section-title {
-            color: #3b82f6; /* Buluug ifaya */
-            font-size: 18px;
-            border-bottom: 2px solid #0f2027;
-            padding-bottom: 5px;
-            margin-top: 20px;
-            text-align: left;
-            font-weight: bold;
-        }
-
-        /* QORAALKA SHEEKADA MAQAAYADDA */
-        .about-text {
-            font-size: 15px;
-            color: #334155;
-            line-height: 1.7;
-            text-align: left;
-            margin: 10px 0;
-        }
-
-        .highlight {
-            color: #2563eb; /* Midab buluug ah oo lagu muujiyey cuntooyinka */
-            font-weight: bold;
-        }
-
-        /* BOORKA WEYN EE CUNTOOYINKA IYU CABITAANNADA (HERO BANNER - BACKGROUND CADDAAN AH) */
-        .food-collage-banner {
-            margin-top: 25px;
-            margin-bottom: 15px;
-            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.15)), 
-                        url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=600');
-            background-size: cover;
-            background-position: center;
-            border-radius: 12px;
-            height: 200px;
-            border: 2px solid #0f2027;
-        }
-
-        /* LIISKA SAWIRRADA MAQAAYADDA */
-        .mini-gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .gallery-img {
-            width: 100%;
-            height: 95px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 1px solid #0f2027;
-        }
-
-        /* FARIINTA UGU DANBEYSA */
-        .footer-brand {
-            font-size: 24px;
-            color: #0f2027;
-            font-weight: bold;
-            margin-top: 25px;
-            padding-top: 15px;
-            border-top: 2px solid #0f2027;
-        }
-
-        .order-btn {
-            background-color: #0f2027;
-            color: #ffffff;
-            padding: 12px 30px;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            margin-top: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="card">
-        <div class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
-        
-        <div class="main-title">Hamar Shood</div>
-
-        <div class="section-title">🍽️ Soo Dhowaada</div>
-        <p class="about-text">
-            Maqaayadda <span class="highlight">Hamar Shood</span> waxaad ka heli kartaa cuntooyin kala duwan sida <span class="highlight">Burger, Shawarmo, Jibsi (Chips), Sambuus</span>, iyo cuntooyin kale oo fudud. Sidoo kale, waxaad ka heli kartaa <span class="highlight">Bariis iyo Baasto</span>, iyo haddalo kale oo qurux badan.
-        </p>
-        <p class="about-text">
-            Siddii <span class="highlight">Hamar Shood</span> aad ka heli kartaa cuntooyin macaan badan oo maskaxdaada quudinaya. Waxaa intaas dheer, inaad haddana ka heli karto <span class="highlight">Cabitaanno kala duwan</span>, kuwa dabiiciga ah (Fresh Juices) iyo kuwa sajaleysan (Ice Drinks) labadaba!
-        </p>
-
-        <div class="section-title">📸 Boorka Cuntooyinka & Cabitaanka</div>
-        
-        <div class="food-collage-banner"></div>
-        
-        <div class="mini-gallery">
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400" class="gallery-img" alt="Burger">
-            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400" class="gallery-img" alt="Bariis">
-            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=400" class="gallery-img" alt="Cabitaan">
-            <img src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?q=80&w=400" class="gallery-img" alt="Sambuus iyo Jibsi">
+        <div style="text-align:center; padding:20px 15px 5px 15px; font-weight:bold; color:#a20042;">
+            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
         </div>
 
-        <button class="order-btn">🚀 Dalbo Hadda</button>
+        <div style="padding:15px 20px; background:#faf5f7; margin:10px 15px; border-radius:12px; border-left:5px solid #a20042;">
+            <h2 style="font-size:20px; font-weight:800; color:#a20042; margin:0 0 10px 0;">👋 Ku Soo Dhowaada!</h2>
+            <p style="font-size:15px; color:#334155; line-height:1.7; margin:0 0 12px 0;">
+                Macamiil, ku soo dhowoow maqaayada <span style="color:#a20042; font-weight:bold;">Hamar Shood Fast Food</span>! Waxaad maqaayada ka heli kartaa cuntooyin kala duwan oo aad u dhadhan macaan sida <span style="color:#a20042; font-weight:bold;">Burger, Shawarmo, Digaag, Kaluun, Sambuus</span>, iyo kuwo kale oo badan.
+            </p>
+            <p style="font-size:15px; color:#334155; line-height:1.7; margin:0 0 12px 0;">
+                Sidoo kale, waxaad ka heli kartaa <span style="color:#a20042; font-weight:bold;">Bariis, Baasto</span>, iyo adeegyo dhameystiran oo loogu talagalay raaxadaada. Waxaad kaloo ka heli kartaa cabitaanno aad u qaboow sida <span style="color:#a20042; font-weight:bold;">Cabitaanada Dabiiciga ah (Fresh Juices)</span>.
+            </p>
+            <p style="font-size:15px; color:#334155; font-weight:bold; margin:0;">
+                Mar kale, ku soo dhowoow macamiil Hamar Shood Fast Food!
+            </p>
+        </div>
 
-        <div class="footer-brand">Hamar Shood Fast Food</div>
+        <div style="background:#a20042; color:#ffffff; padding:25px 15px; text-align:center; margin:25px 15px 15px 15px; border-radius:12px; border:3px solid #7a0031; position:relative; box-shadow:0 4px 10px rgba(162,0,66,0.15);">
+            <h1 style="font-size:30px; font-weight:900; margin:0; text-transform:uppercase; letter-spacing:1px;">Hamar Shood</h1>
+            <div style="display:flex; align-items:center; justify-content:center; gap:10px; margin-top:12px;">
+                <span style="font-size:18px;">➥</span>
+                <span style="background:#ffffff; color:#a20042; padding:5px 20px; font-weight:800; font-size:13px; border-radius:4px; border:2px solid #7a0031;">FAST FOOD & SWEETS</span>
+                <span style="font-size:18px;">➦</span>
+            </div>
+        </div>
+
+        <div style="padding:0 15px; display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px;">
+            <div style="border:2px solid #f0e6eb; border-radius:10px; overflow:hidden; background:#ffffff;">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400" style="width:100%; height:110px; object-fit:cover;">
+                <p style="font-size:13px; font-weight:bold; color:#a20042; padding:8px; text-align:center; margin:0; background:#faf5f7;">🔥 Burger Casri Ah</p>
+            </div>
+            <div style="border:2px solid #f0e6eb; border-radius:10px; overflow:hidden; background:#ffffff;">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400" style="width:100%; height:110px; object-fit:cover;">
+                <p style="font-size:13px; font-weight:bold; color:#a20042; padding:8px; text-align:center; margin:0; background:#faf5f7;">🍛 Bariis & Baasto</p>
+            </div>
+            <div style="border:2px solid #f0e6eb; border-radius:10px; overflow:hidden; background:#ffffff;">
+                <img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=400" style="width:100%; height:110px; object-fit:cover;">
+                <p style="font-size:13px; font-weight:bold; color:#a20042; padding:8px; text-align:center; margin:0; background:#faf5f7;">🍗 Digaag & Kaluun</p>
+            </div>
+            <div style="border:2px solid #f0e6eb; border-radius:10px; overflow:hidden; background:#ffffff;">
+                <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=400" style="width:100%; height:110px; object-fit:cover;">
+                <p style="font-size:13px; font-weight:bold; color:#a20042; padding:8px; text-align:center; margin:0; background:#faf5f7;">🍹 Cabitaanno Fresh Ah</p>
+            </div>
+        </div>
+
+        <div style="background:#faf5f7; border:2px dashed #a20042; margin:20px 15px; padding:12px; border-radius:10px; text-align:center; font-size:14px;">
+            <div style="font-weight:bold; color:#475569;">📞 Wixii Dalab Ah Kala Xiriir:</div>
+            <div style="font-size:18px; font-weight:bold; color:#a20042; margin-top:4px;">+252 61-8-84-63-94</div>
+        </div>
+
+        <button style="background:#a20042; color:#ffffff; width:calc(100% - 30px); margin:0 auto; padding:14px; border:none; border-radius:25px; font-size:16px; font-weight:bold; cursor:pointer; display:block;">🚀 Dalbo Hadda</button>
+
+        <div style="text-align:center; margin-top:30px; font-size:12px; color:#94a3b8;">
+            © 2026 Hamar Shood Restaurant. Code by Mohsin-hdev
+        </div>
         
     </div>
-
-</body>
-</html>
+</main>
